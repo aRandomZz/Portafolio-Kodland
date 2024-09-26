@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="header">Debugger tool to see feedback</h1>
+    {%block content%}
+        {% for el in feed%}
+        <hr>
+        <div class="feedback">
+            <h1>{{el.email}}</h1>
+            <p>{{el.text}}</p>
+        </div>
+        {%endfor%}
+    {%endblock%}
+</body>
+</html>
